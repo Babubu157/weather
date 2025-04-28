@@ -21,28 +21,28 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // const circles = [
-  //   "w-[1340px] h-[1340px]",
-  //   "w-[940px] h-[940px]",
-  //   "w-[540px] h-[540px]",
-  //   "w-[340px] h-[340px]",
-  //   "w-[140px] h-[140px]",
-  // ];
-  // return (
-  //   <html lang="en">
-  //     <body
-  //       className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center h-screen`}
-  //     >
-  //       <div className="relative w-[1600px] h-[1200px] flex justify-center items-center">
-  //         {children}
-  //         {circles.map((el, index) => {
-  //           return <Ring key={index} el={el} />;
-  //         })}
-  //         <Curve />
-  //         <LogoLeft />
-  //         <LogoRight />
-  //       </div>
-  //     </body>
-  //   </html>
-  // );
+  const circles = [
+    "w-[1340px] h-[1340px]",
+    "w-[940px] h-[940px]",
+    "w-[540px] h-[540px]",
+    "w-[340px] h-[340px]",
+    "w-[140px] h-[140px]",
+  ];
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center h-screen`}
+      >
+        {/* <div className="relative w-[1600px] h-[1200px] flex justify-center items-center"> */}
+        {children}
+        {/* {circles.map((el, index) => {
+            return <Ring key={index} el={el} />;
+          })}
+          <Curve />
+          <LogoLeft />
+          <LogoRight />
+        </div> */}
+      </body>
+    </html>
+  );
 }
